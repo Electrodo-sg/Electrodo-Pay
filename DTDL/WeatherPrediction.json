@@ -1,0 +1,1210 @@
+{
+ "@id": "dtmi:com:dtdlEditor:weatherForecast20250428;1",
+ "@type": "Interface",
+ "@context": [
+  "dtmi:dtdl:context;3",
+  "dtmi:dtdl:extension:quantitativeTypes;1"
+ ],
+ "contents": [
+  {
+   "@id": "dtmi:com:dtdlEditor:address;1",
+   "@type": "Property",
+   "writable": false,
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:address_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:addressCountry;1",
+      "@type": "Field",
+      "schema": "string",
+      "name": "addressCountry",
+      "description": "The country. For example, Spain"
+     },
+     {
+      "@id": "dtmi:com:dtdlEditor:addressLocality;1",
+      "@type": "Field",
+      "name": "addressLocality",
+      "schema": "string",
+      "description": "The locality in which the street address is, and which is in the region"
+     },
+     {
+      "@id": "dtmi:com:dtdlEditor:addressRegion;1",
+      "@type": "Field",
+      "name": "addressRegion",
+      "schema": "string",
+      "description": "The region in which the locality is, and which is in the country"
+     }
+    ]
+   },
+   "name": "address"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dataProvider;1",
+   "@type": "Property",
+   "writable": false,
+   "schema": "string",
+   "name": "dataProvider",
+   "description": {
+    "en-US": "A sequence of characters identifying the provider of the harmonised data entity"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dateCreated;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "dateCreated",
+   "description": {
+    "en-US": "Entity creation timestamp. This will usually be allocated by the storage platform"
+   },
+   "schema": "date"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dateIssued;1",
+   "@type": "Property",
+   "writable": false,
+   "schema": "date",
+   "name": "dateIssued",
+   "description": {
+    "en-US": "The date and time the forecast was issued by the meteorological bureau in ISO8601 UTC format"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dateModified;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "dateModified",
+   "description": {
+    "en-US": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
+   },
+   "schema": "date"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dateRetrieved;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "dateRetrieved",
+   "schema": "date",
+   "description": {
+    "en-US": "The date and time the forecast was retrieved in ISO8601 UTC format"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMaximum1;1",
+   "@type": "Property",
+   "writable": true,
+   "description": {
+    "en-US": "'Maximum values for the reported period. Subattributes:- `temperature` : Maximum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Maximum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.-   `relativeHumidity`. Maximum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMaximum1",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMaximum1_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMaximumTemperature1;1",
+      "@type": "Field",
+      "name": "dayMaximumTemperature1",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMaximum1"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMinimum1;1",
+   "@type": "Property",
+   "writable": true,
+   "description": {
+    "en-US": "'Minimum values forecasted for the reported period.  Minimum values for the reported period. Subattributes:- `temperature` : Minimum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Minimum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.- `relativeHumidity`. Minimum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMinimum1",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMinimum1_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMinimumTemperature1;1",
+      "@type": "Field",
+      "name": "dayMinimumTemperature1",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMinimum1"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMaximum2;1",
+   "@type": "Property",
+   "writable": false,
+   "description": {
+    "en-US": "'Maximum values for the reported period. Subattributes:- `temperature` : Maximum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Maximum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.-   `relativeHumidity`. Maximum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMaximum2",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMaximum2_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMaximumTemperature2;1",
+      "@type": "Field",
+      "name": "dayMaximumTemperature2",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMaximum2"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMinimum2;1",
+   "@type": "Property",
+   "writable": false,
+   "description": {
+    "en-US": "'Minimum values forecasted for the reported period.  Minimum values for the reported period. Subattributes:- `temperature` : Minimum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Minimum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.- `relativeHumidity`. Minimum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMinimum2",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMinimum2_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMinimumTemperature2;1",
+      "@type": "Field",
+      "name": "dayMinimumTemperature2",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMinimum2"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMaximum3;1",
+   "@type": "Property",
+   "writable": false,
+   "description": {
+    "en-US": "'Maximum values for the reported period. Subattributes:- `temperature` : Maximum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Maximum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.-   `relativeHumidity`. Maximum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMaximum3",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMaximum3_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMaximumTemperature3;1",
+      "@type": "Field",
+      "name": "dayMaximumTemperature3",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMaximum3"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMinimum3;1",
+   "@type": "Property",
+   "writable": false,
+   "description": {
+    "en-US": "'Minimum values forecasted for the reported period.  Minimum values for the reported period. Subattributes:- `temperature` : Minimum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Minimum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.- `relativeHumidity`. Minimum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMinimum3",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMinimum3_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMinimumTemperature3;1",
+      "@type": "Field",
+      "name": "dayMinimumTemperature3",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMaximum3"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMaximum4;1",
+   "@type": "Property",
+   "writable": false,
+   "description": {
+    "en-US": "'Maximum values for the reported period. Subattributes:- `temperature` : Maximum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Maximum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.-   `relativeHumidity`. Maximum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMaximum4",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMaximum4_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMaximumTemperature4;1",
+      "@type": "Field",
+      "name": "dayMaximumTemperature4",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMaximum4"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMinimum4;1",
+   "@type": "Property",
+   "writable": false,
+   "description": {
+    "en-US": "'Minimum values forecasted for the reported period.  Minimum values for the reported period. Subattributes:- `temperature` : Minimum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Minimum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.- `relativeHumidity`. Minimum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMinimum4",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMinimum4_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMinimumTemperature4;1",
+      "@type": "Field",
+      "name": "dayMinimumTemperature4",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMinimum4"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMaximum5;1",
+   "@type": "Property",
+   "writable": false,
+   "description": {
+    "en-US": "'Maximum values for the reported period. Subattributes:- `temperature` : Maximum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Maximum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.-   `relativeHumidity`. Maximum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMaximum5",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMaximum5_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMaximumTemperature5;1",
+      "@type": "Field",
+      "name": "dayMaximumTemperature5",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMaximum5"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMinimum5;1",
+   "@type": "Property",
+   "writable": false,
+   "description": {
+    "en-US": "'Minimum values forecasted for the reported period.  Minimum values for the reported period. Subattributes:- `temperature` : Minimum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Minimum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.- `relativeHumidity`. Minimum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMinimum5",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMinimum5_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMinimumTemperature5;1",
+      "@type": "Field",
+      "name": "dayMinimumTemperature5",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMinimum5"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMaximum6;1",
+   "@type": "Property",
+   "writable": false,
+   "description": {
+    "en-US": "'Maximum values for the reported period. Subattributes:- `temperature` : Maximum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Maximum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.-   `relativeHumidity`. Maximum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMaximum6",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMaximum6_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMaximumTemperature6;1",
+      "@type": "Field",
+      "name": "dayMaximumTemperature6",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMaximum6"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMinimum6;1",
+   "@type": "Property",
+   "writable": false,
+   "description": {
+    "en-US": "'Minimum values forecasted for the reported period.  Minimum values for the reported period. Subattributes:- `temperature` : Minimum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Minimum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.- `relativeHumidity`. Minimum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMinimum6",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMinimum6_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMinimumTemperature6;1",
+      "@type": "Field",
+      "name": "dayMinimumTemperature6",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMinimum6"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMaximum7;1",
+   "@type": "Property",
+   "writable": false,
+   "description": {
+    "en-US": "'Maximum values for the reported period. Subattributes:- `temperature` : Maximum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Maximum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.-   `relativeHumidity`. Maximum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMaximum7",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMaximum7_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMaximumTemperature7;1",
+      "@type": "Field",
+      "name": "dayMaximumTemperature7",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMaximum7"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:dayMinimum7;1",
+   "@type": "Property",
+   "writable": false,
+   "description": {
+    "en-US": "'Minimum values forecasted for the reported period.  Minimum values for the reported period. Subattributes:- `temperature` : Minimum temperature. See `WeatherForecast.temperature` for description and units. - `feelLikesTemperature`. Minimum feels like temperature. Same semantics and units as `WeatherForecast.feelsLikeTemperature`.- `relativeHumidity`. Minimum relative humidity. Same semantics and units as `WeatherForecast.relativeHumidity`'"
+   },
+   "name": "dayMinimum7",
+   "schema": {
+    "@id": "dtmi:com:dtdlEditor:dayMinimum7_Complex_object;1",
+    "@type": "Object",
+    "fields": [
+     {
+      "@id": "dtmi:com:dtdlEditor:dayMinimumTemperature7;1",
+      "@type": "Field",
+      "name": "dayMinimumTemperature7",
+      "schema": "string",
+      "description": "Temperature of the item"
+     }
+    ],
+    "displayName": "dayMinimum7"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:description;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "description",
+   "description": {
+    "en-US": "A description of this item"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:precipitation;1",
+   "@type": "Property",
+   "writable": false,
+   "schema": "string",
+   "description": {
+    "en-US": "Amount of water rain expected"
+   },
+   "name": "precipitation"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:name;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "name",
+   "schema": "string",
+   "description": {
+    "en-US": "The name of this item"
+   }
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:precipitationProbability;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "precipitationProbability",
+   "description": {
+    "en-US": "Probability of rainfall"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:relativeHumidity;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "relativeHumidity",
+   "description": {
+    "en-US": "Humidity in the Air. Observed instantaneous relative humidity (water vapour in air)"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:temperatureDay1;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "temperatureDay1",
+   "description": {
+    "en-US": "temperatureDay1"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:temperatureDay2;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "temperatureDay2",
+   "description": {
+    "en-US": "temperatureDay2"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:temperatureDay3;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "temperatureDay3",
+   "description": {
+    "en-US": "temperatureDay3"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:temperatureDay4;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "temperatureDay4",
+   "description": {
+    "en-US": "temperatureDay4"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:temperatureDay5;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "temperatureDay5",
+   "description": {
+    "en-US": "temperatureDay5"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:temperatureDay6;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "temperatureDay6",
+   "description": {
+    "en-US": "temperatureDay6"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:temperatureDay7;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "temperatureDay7",
+   "description": {
+    "en-US": "temperatureDay7"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:UVIndex1;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "UVIndex1",
+   "description": {
+    "en-US": "UVIndex1"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:UVIndex2;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "UVIndex2",
+   "description": {
+    "en-US": "UVIndex2"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:UVIndex3;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "UVIndex3",
+   "description": {
+    "en-US": "UVIndex3"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:UVIndex4;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "UVIndex4",
+   "description": {
+    "en-US": "UVIndex4"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:UVIndex5;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "UVIndex5",
+   "description": {
+    "en-US": "UVIndex5"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:UVIndex6;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "UVIndex6",
+   "description": {
+    "en-US": "UVIndex6"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:UVIndex7;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "UVIndex7",
+   "description": {
+    "en-US": "UVIndex7"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:rainProbabilityDay1;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "rainProbabilityDay1",
+   "description": {
+    "en-US": "rainProbabilityDay1"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:rainProbabilityDay2;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "rainProbabilityDay2",
+   "description": {
+    "en-US": "rainProbabilityDay2"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:rainProbabilityDay3;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "rainProbabilityDay3",
+   "description": {
+    "en-US": "rainProbabilityDay3"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:rainProbabilityDay4;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "rainProbabilityday4",
+   "description": {
+    "en-US": "rainProbabilityDay4"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:rainProbabilityDay5;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "rainProbabilityDay5",
+   "description": {
+    "en-US": "rainProbabilityDay5"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:rainProbabilityDay6;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "rainProbabilityDay6",
+   "description": {
+    "en-US": "rainProbabilityDay6"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:rainProbabilityDay7;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "rainProbabilityDay7",
+   "description": {
+    "en-US": "rainProbabilityDay7"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfRainDay1;1",
+   "@type": "Property",
+   "writable": true,
+   "name": "hoursOfRainDay1",
+   "description": {
+    "en-US": "hoursOfRainDay1"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfRainDay2;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfRainDay2",
+   "description": {
+    "en-US": "hoursOfRainDay2"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfRainDay3;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfRainDay3",
+   "description": {
+    "en-US": "hoursOfRainDay3"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfRainDay4;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfRainday4",
+   "description": {
+    "en-US": "hoursOfRainDay4"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfRainDay5;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfRainDay5",
+   "description": {
+    "en-US": "hoursOfRainDay5"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfRainDay6;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfRainDay6",
+   "description": {
+    "en-US": "hoursOfRainDay6"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfRainDay7;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfRainDay7",
+   "description": {
+    "en-US": "hoursOfRainDay7"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfIceNightDay1;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfIceNightDay1",
+   "description": {
+    "en-US": "hoursOfIceNightDay1"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfIceNightDay2;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfIceNightDay2",
+   "description": {
+    "en-US": "hoursOfIceNightDay2"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfIceNightDay3;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfIceNightDay3",
+   "description": {
+    "en-US": "hoursOfIceNightDay3"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfIceNightDay4;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfIceNightday4",
+   "description": {
+    "en-US": "hoursOfIceNightDay4"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfIceNightDay5;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfIceNightDay5",
+   "description": {
+    "en-US": "hoursOfIceNightDay5"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfIceNightDay6;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfIceNightDay6",
+   "description": {
+    "en-US": "hoursOfIceNightDay6"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfIceNightDay7;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfIceNightDay7",
+   "description": {
+    "en-US": "hoursOfIceNightDay7"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:iceProbabilityNightDay1;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "iceProbabilityNightDay1",
+   "description": {
+    "en-US": "iceProbabilityNightDay1"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:iceProbabilityNightDay2;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "iceProbabilityNightDay2",
+   "description": {
+    "en-US": "iceProbabilityNightDay2"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:iceProbabilityNightDay3;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "iceProbabilityNightDay3",
+   "description": {
+    "en-US": "iceProbabilityNightDay3"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:iceProbabilityNightDay4;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "iceProbabilityNightday4",
+   "description": {
+    "en-US": "iceProbabilityNightDay4"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:iceProbabilityNightDay5;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "iceProbabilityNightDay5",
+   "description": {
+    "en-US": "iceProbabilityNightDay5"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:iceProbabilityNightDay6;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "iceProbabilityNightDay6",
+   "description": {
+    "en-US": "iceProbabilityNightDay6"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:iceProbabilityNightDay7;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "iceProbabilityNightDay7",
+   "description": {
+    "en-US": "iceProbabilityNightDay7"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSunDay1;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSunDay1",
+   "description": {
+    "en-US": "hoursOfSunDay1"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSunDay2;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSunDay2",
+   "description": {
+    "en-US": "hoursOfSunDay2"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSunDay3;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSunDay3",
+   "description": {
+    "en-US": "hoursOfSunDay3"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSunDay4;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSunDay4",
+   "description": {
+    "en-US": "hoursOfSunDay4"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSunDay5;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSunDay5",
+   "description": {
+    "en-US": "hoursOfSunDay5"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSunDay6;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSunDay6",
+   "description": {
+    "en-US": "hoursOfSunDay6"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSunDay7;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSunDay7",
+   "description": {
+    "en-US": "hoursOfSunDay7"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:cloudCoverDay1;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "cloudCoverDay1",
+   "description": {
+    "en-US": "cloudCoverDay1"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:cloudCoverDay2;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "cloudCoverDay2",
+   "description": {
+    "en-US": "cloudCoverDay2"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:cloudCoverDay3;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "cloudCoverDay3",
+   "description": {
+    "en-US": "cloudCoverDay3"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:cloudCoverDay4;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "cloudCoverDay4",
+   "description": {
+    "en-US": "cloudCoverDay4"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:cloudCoverDay5;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "cloudCoverDay5",
+   "description": {
+    "en-US": "cloudCoverDay5"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:cloudCoverDay6;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "cloudCoverDay6",
+   "description": {
+    "en-US": "cloudCoverDay6"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:cloudCoverDay7;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "cloudCoverDay7",
+   "description": {
+    "en-US": "cloudCoverDay7"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSnowDay1;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSnowDay1",
+   "description": {
+    "en-US": "hoursOfSnowDay1"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSnowDay2;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSnowDay2",
+   "description": {
+    "en-US": "hoursOfSnowDay2"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSnowDay3;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSnowDay3",
+   "description": {
+    "en-US": "hoursOfSnowDay3"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSnowDay4;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSnowday4",
+   "description": {
+    "en-US": "hoursOfSnowDay4"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSnowDay5;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSnowDay5",
+   "description": {
+    "en-US": "hoursOfSnowDay5"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSnowDay6;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSnowDay6",
+   "description": {
+    "en-US": "hoursOfSnowDay6"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:hoursOfSnowDay7;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "hoursOfSnowDay7",
+   "description": {
+    "en-US": "hoursOfSnowDay7"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:snowProbabilityDay1;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "snowProbabilityDay1",
+   "description": {
+    "en-US": "snowProbabilityDay1"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:snowProbabilityDay2;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "snowProbabilityDay2",
+   "description": {
+    "en-US": "snowProbabilityDay2"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:snowProbabilityDay3;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "snowProbabilityDay3",
+   "description": {
+    "en-US": "snowProbabilityDay3"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:snowProbabilityDay4;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "snowProbabilityday4",
+   "description": {
+    "en-US": "snowProbabilityDay4"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:snowProbabilityDay5;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "snowProbabilityDay5",
+   "description": {
+    "en-US": "snowProbabilityDay5"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:snowProbabilityDay6;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "snowProbabilityDay6",
+   "description": {
+    "en-US": "snowProbabilityDay6"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:snowProbabilityDay7;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "snowProbabilityDay7",
+   "description": {
+    "en-US": "snowProbabilityDay7"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:source;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "source",
+   "description": {
+    "en-US": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:uVIndexMax;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "uVIndexMax",
+   "description": {
+    "en-US": "'The maximum UV index for the period, based on the World Health Organization''s UV Index measure. Normative references: [http://www.who.int/uv/intersunprogramme/activities/uv_index/en/](http://www.who.int/uv/intersunprogramme/activities/uv_index/en/)'"
+   },
+   "schema": "string"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:validFrom;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "validFrom",
+   "description": {
+    "en-US": "Validity period start date and time"
+   },
+   "schema": "date"
+  },
+  {
+   "@id": "dtmi:com:dtdlEditor:validTo;1",
+   "@type": "Property",
+   "writable": false,
+   "name": "validTo",
+   "schema": "date",
+   "description": {
+    "en-US": "Validity period end date and time"
+   }
+  }
+ ],
+ "schemas": [],
+ "extends": [],
+ "displayName": {
+  "en-US": "weatherForecast20250421"
+ }
+}

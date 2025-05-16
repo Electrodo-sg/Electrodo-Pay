@@ -1,0 +1,23 @@
+{
+ "@id": "dtmi:example:FroniusSolarPanel20250219;4",
+ "@type": "Interface",
+ "displayName": "FroniusSolarPanel20250219",
+ "contents": [
+  {
+   "@type": "Property",
+   "name": "E_Total",
+   "schema": "double"
+  },
+  {
+   "@type": "Property",
+   "name": "E_Year",
+   "schema": "double"
+  },
+  {
+   "@type": "Property",
+   "name": "E_Day",
+   "schema": "double"
+  }
+ ],
+ "@context": "dtmi:dtdl:context;2"
+}
