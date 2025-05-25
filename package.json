@@ -3,24 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node --loader ts-node/esm",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@metaplex-foundation/mpl-token-metadata": "^2.13.0",
+    "@types/express": "^5.0.2",
+    "@coral-xyz/anchor": "^0.31.1",
     "@solana/spl-token": "^0.4.13",
-    "@solana/web3.js": "^1.98.2",
-    "@types/express": "^5.0.1",
-    "@types/node": "^22.15.18",
     "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "fs": "^0.0.1-security",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "express": "^5.1.0"
   }
 }
