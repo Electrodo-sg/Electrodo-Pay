@@ -10,9 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/express": "^5.0.2",
     "@coral-xyz/anchor": "^0.31.1",
+    "@solana/spl-memo": "^0.2.5",
     "@solana/spl-token": "^0.4.13",
+    "@types/express": "^5.0.2",
     "dotenv": "^16.5.0",
     "express": "^5.1.0"
   }
