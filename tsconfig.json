@@ -1,15 +1,20 @@
 {
   "compilerOptions": {
-    "target": "es2020",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",
-    "resolveJsonModule": true
+    "target": "es2020", // Можна залишити ES2020 для сучасних можливостей
+    "module": "commonjs", // Змінюємо на "commonjs" для Node.js
+    "moduleResolution": "node", // Це залишаємо, оскільки працює з Node.js модулями
+    "strict": true, // Увімкнути строгі типи
+    "esModuleInterop": true, // Для сумісності з CommonJS модулями
+    "skipLibCheck": true, // Пропуск перевірки бібліотек
+    "forceConsistentCasingInFileNames": true, // Забезпечує коректне регістрне порівняння
+    "outDir": "./dist", // Використовується для компіляції в папку dist (необов'язково для запуску через ts-node)
+    "resolveJsonModule": true // Якщо працюєте з JSON файлами
   },
-  "include": ["./**/*"],
-  "exclude": ["node_modules"]
-} 
+  "include": [
+    "programs/token-distributor/services/**/*", // Включаємо всі файли .ts у вказаній директорії
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules" // Виключаємо node_modules
+  ]
+}
