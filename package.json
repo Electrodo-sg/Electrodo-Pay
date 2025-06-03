@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@coral-xyz/anchor": "^0.31.1",
-    "@solana/spl-token": "^0.1.8",
+    "@solana/spl-token": "^0.4.13",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "ts-node": "^10.9.2"
