@@ -51,9 +51,9 @@ pub mod token_distributor {
             return Err(CustomError::InsufficientTokens.into());
         }
 
-        // распределяем: 70% / 20% / остаток
-        let amount1 = total_amount * 70 / 100;
-        let amount2 = total_amount * 20 / 100;
+        // распределяем: 90% / 7% / остаток
+        let amount1 = total_amount * 90 / 100;
+        let amount2 = total_amount * 7 / 100;
         let amount3 = total_amount - amount1 - amount2;
 
         token::transfer(
