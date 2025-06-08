@@ -14,13 +14,8 @@
     "@coral-xyz/anchor": "^0.31.1",
     "@solana/spl-memo": "^0.2.5",
     "@solana/spl-token": "^0.4.13",
-<<<<<<< HEAD
     "@solana/web3.js": "^1.98.2",
-=======
-    "@types/express": "^5.0.2",
->>>>>>> origin/magistr
     "dotenv": "^16.5.0",
-<<<<<<< HEAD
     "express": "^4.21.2",
     "uuid": "^11.1.0"
   },
@@ -29,13 +24,6 @@
     "@types/node": "^22.15.29",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
-=======
-    "express": "^5.1.0",
-    "ts-node": "^10.9.2"
-  },
-  "devDependencies": {
-    "@types/express": "^5.0.2",
->>>>>>> origin/maks
     "typescript": "^5.8.3"
   }
 }
