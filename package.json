@@ -12,8 +12,13 @@
   "license": "ISC",
   "dependencies": {
     "@coral-xyz/anchor": "^0.31.1",
+    "@solana/spl-memo": "^0.2.5",
     "@solana/spl-token": "^0.4.13",
+<<<<<<< HEAD
     "@solana/web3.js": "^1.98.2",
+=======
+    "@types/express": "^5.0.2",
+>>>>>>> origin/magistr
     "dotenv": "^16.5.0",
 <<<<<<< HEAD
     "express": "^4.21.2",

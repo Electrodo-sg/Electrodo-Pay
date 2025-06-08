@@ -1,5 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 node_modules
 =======
 node_modules/
 >>>>>>> origin/maks
+=======
+node_modules/
+
+target/
+>>>>>>> origin/magistr
